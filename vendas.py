@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from pathlib import Path
+import os
 
 def gerar_vendas_massa(quantidade=1000, nome_arquivo="vendas.xlsx"):
     # Caminho dinâmico para a Área de Trabalho (Desktop)
