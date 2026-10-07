@@ -35,6 +35,7 @@ def gerar_vendas_massa(quantidade=1000, nome_arquivo="vendas.xlsx"):
 
     # Salva na Área de Trabalho
     df_final.to_excel(caminho_completo, index=False)
+    os.startfile(caminho_completo)
     print(f"Sucesso! {quantidade} registros foram adicionados e salvos em \n{caminho_completo}")
 
 # Executa para gerar 1000 registros
